@@ -1,0 +1,119 @@
+<DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="project.css">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+     <script src="https://kit.fontawesome.com/efd8189c29.js" crossorigin="anonymous"></script>
+     <!-- <meta name="viewport"content="width"=device-width,initial-scale=1,minimum scale=1"> -->
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                // Show hide popover
+                $(".dropdown").click(function(){
+                    $(this).find(".dropdown-menu").slideToggle("fast");
+                });
+            });
+    $(document).on("click", function(event){
+        var $trigger = $(".dropdown");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $(".dropdown-menu").slideUp("fast");
+        }            
+    });
+    </script>
+        
+    </head>
+    <body>
+<!-- the site name  -->
+        <div id="heading">
+            <span>RM-iPred:Rice-Magnaporthe Grisea Protein-Protein Interaction Prediction</span>
+        </div>
+<!-- the navigation section having different sections  -->
+       
+<ul>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project.html">Home</a></li>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project%20submit.html">Submit</a></li>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project.html">Interolog Model</a></li>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project.html">Domain Model</a></li>
+<li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project.html">Gene Ontology Model</a></li>
+
+
+    <!-- the dropdown section  -->
+    <li class="dropdown">
+        <a href="#">Datasets &#9662;</a>
+        <ul class="dropdown-menu">
+        <li><a href="#">Rice</a></li>
+        <li><a href="#">M.Grisea</a></li>
+        <li><a href="#">Predicted</a></li>
+        <li><a href="#">Exp.PPI</a></li>
+        </ul>
+    </li>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project%20contact.html">Contact</a></li>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project%20members.html">Members</a></li>
+</ul>
+ <section id="experience">
+
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-briefcase"></i>
+                </span>
+                <span> Memebers </span>
+            </h1>
+
+            <div class="timeline">
+
+                <div class="timeline-box ">
+                    <div class="timeline-container">
+                        
+                        <h3 class="experience-designation  m0 m-blue"> Manya Mansi </h3>
+                        <h5 class="experience-duration m0"> branch-information technology</h5>
+
+                        <p class="experience-description text-justify"> description about member 1</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-box right ">
+                    <div class="timeline-container">
+                        
+                        <h3 class="experience-designation  m0 m-blue">Tanya Prakash </h3>
+                     
+                        <h5 class="experience-duration m0"> B ranch-IMSC-Maths and Computing </h5>
+                        <p class="experience-description text-justify"> description of memeber 2 </p>
+                    </div>
+                </div>
+
+                <div class="timeline-box left ">
+                    <div class="timeline-container">
+                        
+                        <h3 class="experience-designation m0 m-blue"> Rishav Mishra</h3>
+                       
+                        <h5 class="experience-duration m0"> Branch-Ece </h5>
+
+                        <p class="experience-description text-justify"> description of memebr 3</p>
+                    </div>
+                </div>
+                 <div class="timeline-box right ">
+                    <div class="timeline-container">
+                        
+                        <h3 class="experience-designation  m0 m-blue">Vaibhav</h3>
+                       
+                        <h5 class="experience-duration m0">Branch-chemical</h5>
+                        <p class="experience-description text-justify"> description of member 4</p>
+                    </div>
+                </div>
+
+                <div id="timeline-divider">
+                    <div class="timeline-traveller">
+                        <div>
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </body>
+</html>

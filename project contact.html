@@ -1,0 +1,74 @@
+<DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="project.css">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                // Show hide popover
+                $(".dropdown").click(function(){
+                    $(this).find(".dropdown-menu").slideToggle("fast");
+                });
+            });
+    $(document).on("click", function(event){
+        var $trigger = $(".dropdown");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $(".dropdown-menu").slideUp("fast");
+        }            
+    });
+    </script>
+        
+    </head>
+    <body>
+<!-- the site name  -->
+        <div id="heading">
+         <span>RM-iPred:Rice-Magnaporthe Grisea Protein-Protein Interaction Prediction</span>
+        </div>
+<!-- the navigation section having different sections  -->
+       
+<ul>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project.html">Home</a></li>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project%20submit.html">Submit</a></li>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project.html">Interolog Model</a></li>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project.html">Domain Model</a></li>
+<li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project.html">Gene Ontology Model</a></li>
+
+
+    <!-- the dropdown section  -->
+    <li class="dropdown">
+        <a href="#">Datasets &#9662;</a>
+        <ul class="dropdown-menu">
+        <li><a href="#">Rice</a></li>
+        <li><a href="#">M.Grisea</a></li>
+        <li><a href="#">Predicted</a></li>
+        <li><a href="#">Exp.PPI</a></li>
+        </ul>
+    </li>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project%20contact.html">Contact</a></li>
+    <li><a href="file:///C:/Users/tanya%20jha/OneDrive/Documents/project%20ece/project%20members.html">Members</a></li>
+</ul>
+    <div >
+ <img src="./images/bit1.jpg" alt="BIT-MESRA" style="height: 25rem;width: 100%;margin:2rem;">
+    </div>
+    <div style="text-align: center;">
+        <h1>CONTACT&nbsp; US</h1>
+     <h2 > feel free to contact us!</h2>
+    </div>
+        <div style="padding: 2rem;margin-left: 3rem;" >
+            <div style="float: right;text-align-last: right;margin-right: 3rem;">
+                <img src="./images/SS-Sahu.jpg" alt="BIT-MESRA" style="height:10rem;width:10rem; margin:2rem;">
+               </div>
+        <h2 >Dr. SITANSHU SEKHAR SAHU</h2>
+        <h3><p>Assistant Professor<br>
+         Dept Of ECE<br>
+        Birla INstitute OF Technology,Mesra<br>
+        Ranchi,India-835215<br>
+        Email:  "sssahu@bitmesra.ac.in"</p></h3>
+        </div>
+   </div>
+   </body>
+</html>
+
+ </body>
+</html>
